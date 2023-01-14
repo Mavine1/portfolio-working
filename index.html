@@ -41,15 +41,76 @@
                         The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated
                         If the function fails, it should return NULL</p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Website/App Interfaces</li>
+                                <li><span>Web development</span><br>Web development</li>
+                                <li><span>App development</span><br>Building Apps/Ios apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2021-Current</span><br>UI/UX Training at light Academy</li>
+                                <li><span>2017-2019</span><br>Head of UX/UX manager at spektra</li>
+                                <li><span>2016-2017</span><br>Internship at Chandaria Industries.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2016</span><br>UI/UX Design and Training</li>
+                                <li><span>2014</span><br>MBA from Strathmore university</li>
+                                <li><span>2011</span><br>BBA from Machakos University</li>
+                            </ul>
                         </div>
                 </div>
 
             </div>
         </div>
     </div>
-    
+    <!----Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Development</h2>
+                    <p> char *string_nconcat(char *s1, char *s2, unsigned int n); The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated If the function fails, it should return NULL.Prototype: char *string_nconcat(char *s1, char *s2, unsigned int n); The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first
+                        <br> n bytes of s2, and null terminated If the function fails, it</p>
+                    <a href="#">learn more</a>                
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p> char *string_nconcat(char *s1, char *s2, unsigned int n); The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated If the function fails, it should return NULL.Prototype: char *string_nconcat(char *s1, char *s2, unsigned int n); The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first
+                        <br> n bytes of s2, and null terminated If the function fails, it</p>
+                    <a href="#">learn more</a>                
+                </div>
+                <div>
+                    <h2>App Development</h2>
+                    <p> char *string_nconcat(char *s1, char *s2, unsigned int n); The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated If the function fails, it should return NULL.Prototype: char *string_nconcat(char *s1, char *s2, unsigned int n); The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first
+                        <br> n bytes of s2, and null terminated If the function fails, it</p>
+                    <a href="#">learn more</a>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 </body>
 </html>
