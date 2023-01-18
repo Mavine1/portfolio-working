@@ -165,3 +165,4 @@ nav ul li a:hover::after{
     margin-top: 20px;
     display:inline-block;
 }
+.services-list div:hover{}
