@@ -148,7 +148,7 @@ nav ul li a:hover::after{
  font-size: 13px;
  font-weight: 300;
  border-right: 10px; 
- transition: background 0.5s,transform 0.5s;  
+ transition: background 0.5s, transform 0.5s;  
 }
 .services-list div i{
     font-size: 50px;
@@ -167,5 +167,6 @@ nav ul li a:hover::after{
     display:inline-block;
 }
 .services-list div:hover{
-
+background: #ff004f;
+transform:translateY(-10px)
 }
