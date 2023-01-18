@@ -150,5 +150,6 @@ nav ul li a:hover::after{
  border-right: 10px;   
 }
 .services-list div i{
-    fon
+    font-size: 50px;
+    margin-bottom: 30px;
 }
