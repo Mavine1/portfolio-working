@@ -190,3 +190,6 @@ transform:translateY(-10px);
     border-radius:10px;
     display: block;
 }
+.layer{
+    width: 100;
+}
