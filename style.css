@@ -242,7 +242,7 @@ transform: scale(1.1);
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: ;
+    transition: background 0.5s;
 }
 .btn:hover{
     background: #ff004f;
