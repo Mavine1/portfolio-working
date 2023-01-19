@@ -207,6 +207,7 @@ transform:translateY(-10px);
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    transition: height 0.5s;
 }
 .layer h3{
     font-weight: 500;
@@ -229,5 +230,6 @@ transform:translateY(-10px);
 transform: scale(1.1);
 }
 .work:hover .layer{
-    
+    height: 100%;
+
 }
