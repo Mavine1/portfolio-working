@@ -185,10 +185,11 @@ transform:translateY(-10px);
     position:relative;
     overflow: hidden;
 }
-.work imgP{
+.work img{
     width: 100%;
     border-radius:10px;
     display: block;
+    transition: transform 0.5s;
 }
 .layer{
     width: 100%;
@@ -223,4 +224,8 @@ transform:translateY(-10px);
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+.work:hover img{
+
+
 }
