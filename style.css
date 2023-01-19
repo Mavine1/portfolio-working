@@ -199,4 +199,8 @@ transform:translateY(-10px);
     left: 0;
     bottom: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
