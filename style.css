@@ -241,5 +241,10 @@ transform: scale(1.1);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    
+    color: #fff;
+    transition: ;
+}
+.btn:hover{
+    background: #ff004f;
+
 }
