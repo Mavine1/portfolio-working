@@ -275,7 +275,7 @@ transform: scale(1.1);
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
-   tr
+   transition: transform 0.5s;
 }
 .social-icons a:hover{
     color: #ff004f;
