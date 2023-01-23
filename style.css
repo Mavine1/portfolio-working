@@ -319,7 +319,7 @@ form.btn2{
     color: #ff004f;
 }
 /*.....css for small screen...*/
-nav.fas{
+nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width:600px){
