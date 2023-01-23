@@ -319,6 +319,9 @@ form.btn2{
     color: #ff004f;
 }
 /*.....css for small screen...*/
+nav.fas{
+    display: none;
+}
 @media only screen and (max-width:600px){
     #header{
         background-image: url(images/phone-background.png);
@@ -329,6 +332,6 @@ form.btn2{
     }
     .header-text h1{
         font-size: 30px;
-        
+
     }
 }
