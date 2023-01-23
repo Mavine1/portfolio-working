@@ -334,4 +334,7 @@ nav .fa-solid{
         font-size: 30px;
 
     }
+    nav .fa-solid{
+        display: block;
+    }
 }
