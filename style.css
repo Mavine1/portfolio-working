@@ -324,6 +324,11 @@ form.btn2{
         background-image: url(images/phone-background.png);
     }
     .header-text{
-        margin
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+        
     }
 }
