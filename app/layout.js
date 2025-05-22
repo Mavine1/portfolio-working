@@ -4,7 +4,6 @@ import "./globals.css";
 const outfitFont = outfit({
   subsets: ["latin"], weight: ["400", "500", "600", "700"],
 });
-
 const ovo = ovo({
   subsets: ["latin"], weight: ["400"],
 });
