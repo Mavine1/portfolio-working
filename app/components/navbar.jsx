@@ -20,7 +20,6 @@ import React from 'react'
        <div>
         <a href="#contact">Contact <Image src={assets.arrow_icon } className='w-3' alt='icon'/></a>
        </div>
-
      </nav>
      </>
    )
