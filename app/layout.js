@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mavine",
-  description: "software En",
+  title: "Portofolio Mavine",
+  description: "software Engineer",
 };
 
 export default function RootLayout({ children }) {
