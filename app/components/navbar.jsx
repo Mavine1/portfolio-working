@@ -18,7 +18,7 @@ import React from 'react'
         </li>
        </ul>
        <div>
-        <a href="#contact">Contact <Image</a>
+        <a href="#contact">Contact <Image src={assets.arrow_icon} className='w-3'/></a>
        </div>
 
      </nav>
