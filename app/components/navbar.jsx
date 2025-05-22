@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
  
- const navbar = () => {
+ const Navbar = () => {
    return (
      <>
      <nav>
@@ -26,4 +26,4 @@ import React from 'react'
    )
  }
  
- export default navbar
+ export default Navbar
