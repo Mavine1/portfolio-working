@@ -7,8 +7,14 @@ import React from 'react'
      <>
      <nav>
         <a href="#">
-        <Image src={assets.logo} alt="logo" />
+        <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt="logo" />
         </a>
+       <ul>
+        <li>
+            
+        </li>
+       </ul>
+
      </nav>
      </>
    )
