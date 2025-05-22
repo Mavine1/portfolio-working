@@ -11,12 +11,15 @@ import React from 'react'
         </a>
        <ul>
         <li>
-            <a href="#">Home</a>
-            <a href ="#">About me</a>
+            <a href="#top">Home</a>
+            <a href ="#about">About me</a>
             <a href="#work">Projects</a>
             <a href="#contact">Contact me </a>
         </li>
        </ul>
+       <div>
+        <a href="#contact">Contact <Image</a>
+       </div>
 
      </nav>
      </>
