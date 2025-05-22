@@ -1,8 +1,14 @@
- import React from 'react'
+ import Image from 'next/image'
+import React from 'react'
  
  const navbar = () => {
    return (
-     <div>navbar</div>
+     <>
+     <nav>
+        < href="#">
+        <Image
+     </nav>
+     </>
    )
  }
  
