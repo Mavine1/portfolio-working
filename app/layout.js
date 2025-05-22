@@ -1,14 +1,12 @@
 import { outfit, ovo } from "next/font/google";
 import "./globals.css";
 
-const outfit = outfit({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const outfitFont = outfit({
+  subsets: ["latin"], weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const ovo = ovo({
+  subsets: ["latin"], weight: ["400"],
 });
 
 export const metadata = {
