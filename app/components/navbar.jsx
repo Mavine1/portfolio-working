@@ -22,5 +22,5 @@ import React from 'react'
      </>
    )
  }
- 
+ //navabar
  export default Navbar
