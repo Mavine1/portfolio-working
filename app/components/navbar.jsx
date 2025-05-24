@@ -5,7 +5,7 @@ import React from 'react'
  const Navbar = () => {
    return (
      <>
-     <nav>
+     <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%]'>
         <a href="#">
         <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt="logo" />
         </a>
