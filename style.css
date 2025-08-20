@@ -100,5 +100,15 @@ a:hover {
 }
 
 .menu-links.open {
-    max-height
+    max-height:300px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
 }
