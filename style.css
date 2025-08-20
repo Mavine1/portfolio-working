@@ -23,5 +23,7 @@ a, .btn{
 /*desktop Nav*/
 nav, .nav-links{
     display:flex;
-    justify-content: space-between;
+}
+nav{
+    
 }
