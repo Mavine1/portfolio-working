@@ -37,6 +37,9 @@ nav{
 .a {
     color: black;
     text-decoration: none;
-    text-decoration-color: rg
+    text-decoration-color: rgb(181, 181, 181);
+}
 
+.logo{
+    font-size: 2rem;
 }
