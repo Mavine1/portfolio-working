@@ -21,3 +21,7 @@ a, .btn{
     transition: all 300ms ease;
 }
 /*desktop Nav*/
+nav, .nav-links{
+    display:flex;
+    justify-content: space-between;
+}
