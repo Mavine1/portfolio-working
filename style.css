@@ -39,7 +39,14 @@ nav{
     text-decoration: none;
     text-decoration-color: rgb(181, 181, 181);
 }
+a:hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
 
 .logo{
     font-size: 2rem;
 }
+
