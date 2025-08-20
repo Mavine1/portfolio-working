@@ -110,5 +110,9 @@ a:hover {
    opacity:0;
 }
 .hamburger-icon.open span:last-child{
-    transform: rotate(-45deg) translateY(8px);
+    transform: rotate(-45deg) translateY(10px, -5px);
 }
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.h
