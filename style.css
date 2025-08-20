@@ -17,3 +17,7 @@ p {
     color: #333;
 }
 /* Transition */
+a, .btn{
+    transition: all 300ms ease;
+}
+/*desktop Nav*/
