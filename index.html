@@ -3,38 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mavine Muganda - Software Developer</title>
+    <title>Mavine Muganda</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav id="desktop-nav">
-        <div class="logo">
-            <a href="#home">Mavine</a>
-        </div>
+        <div class="logo"><a href="#home">Mavine Muganda</a></div>
         <div>
             <ul class="nav-links">
-                <li><a href="#home">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Works</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="mailto:mavinemalin@gmail.com" class="contact-link">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="mailto:mavine@example.com" class="hire-btn">Hire Me</a></li>
             </ul>
         </div>
-        <div class="nav-cta">
-            <button class="btn btn-cta" onclick="location.href='mailto:mavinemalin@gmail.com'">
-                Hire Me 👋
-            </button>
-        </div>
     </nav>
-
-    <!-- Mobile Navigation -->
+    
     <nav id="hamburger-nav">
-        <div class="logo">
-            <a href="#home">Mavine</a>
-        </div>
+        <div class="logo"><a href="#home">Mavine Muganda</a></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -43,120 +29,78 @@
             </div>
             <div class="menu-links">
                 <ul>
-                    <li><a href="#home" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Works</a></li>
-                    <li><a href="#pricing" onclick="toggleMenu()">Pricing</a></li>
-                    <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
-                    <li><a href="mailto:mavinemalin@gmail.com" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="mailto:mavine@example.com" onclick="toggleMenu()">Hire Me</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="home-container">
-            <div class="profile-section">
-                <div class="profile-image-container">
-                    <img src="assets/profile-pic.png" alt="Mavine Muganda" class="profile-image">
-                </div>
-                <h2 class="profile-name">Mavine Muganda</h2>
-                <p class="profile-role">I am a Software Developer based in Kenya.</p>
-                
-                <div class="social-links">
-                    <a href="https://github.com/mavine1" target="_blank" class="social-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/mavine-muganda" target="_blank" class="social-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-                    <a href="#" target="_blank" class="social-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
-                    </a>
-                    <a href="#" target="_blank" class="social-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="content-section">
-                <p class="greeting">Hello There!</p>
-                <h1 class="main-title">
-                    I'M <span class="name-highlight">MAVINE MUGANDA</span>, A <span class="role-highlight">SOFTWARE<br>DEVELOPER</span> CRAFTING <span class="craft-highlight">USER-CENTRIC<br>DESIGN</span> WITH <span class="precision-highlight">PIXEL-PERFECT<br>PRECISION.</span>
-                </h1>
-                
-                <div class="availability">
-                    <div class="status-indicator"></div>
-                    <span>Available for Freelancing</span>
-                </div>
-                
-                <button class="btn btn-download" onclick="window.open('assets/Muganda MavineCv.pdf', '_blank')">
-                    Download CV 📄
-                </button>
-                
-                <p class="description">
-                    Some <strong>may focus on specific niches</strong> or a wide range of services. Computer Science graduate with 1+ years of development experience in web-based applications and technical support. Specialized in Laravel, React, Flutter, and Django development.
-                </p>
-            </div>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Mavine Muganda">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mavine Muganda</h1>
+            <p class="section__text__p2">A Front-End Developer</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('assets/resume-example.pdf', '_blank')">Download Resume</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+        </div>
+        <div id="socials-container">
+            <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="window.open('https://linkedin.com/in/mavine-muganda-1b0a4b1b6/', '_blank')">
+            <img src="assets/github.png" alt="My GitHub Profile" class="icon" onclick="window.open('https://github.com/mavine1', '_blank')">
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">My Services</h2>
-                <p class="section-subtitle">What I can do for you</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Web Development</h3>
-                    <p>Full-stack web development using modern frameworks like Laravel, React, and Django.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Mobile Development</h3>
-                    <p>Cross-platform mobile app development using Flutter for iOS and Android.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛠️</div>
-                    <h3>Technical Support</h3>
-                    <p>Comprehensive technical support and maintenance for your digital solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
     <section id="projects">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">Creative Portfolio</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project1.jpg" alt="E-Commerce Platform" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">A modern e-commerce platform built with React and Node.js, featuring secure payments and real-time inventory management. Complete with user authentication and responsive design for optimal user experience.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
             </div>
-            <div id="projects-container">
-                <!-- Projects will be loaded dynamically -->
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project2.jpg" alt="Creative Portfolio" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Creative Portfolio</h3>
+                    <p class="project-description">An interactive portfolio website showcasing creative work with smooth animations and modern design principles. Features dynamic content loading and optimized performance for fast loading times.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project3.jpg" alt="Analytics Dashboard" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-description">A comprehensive data visualization dashboard built with D3.js and React for business analytics. Includes real-time charts and export functionality for business intelligence insights.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; <span id="current-year"></span> Mavine Muganda. All rights reserved.</p>
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <p class="contact-text">I'm always open to discussing new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:mavine@example.com" class="contact-btn">Say Hello</a>
         </div>
-    </footer>
+    </section>
 
     <script src="script.js"></script>
 </body>
