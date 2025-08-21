@@ -202,3 +202,10 @@ gap: 1rem;
     background-color: rgb(53,53,53);
     color: white;
 }
+
+.btn-color-1:hover{
+    background-color: rgb(53, 53, 53);
+}
+.btn-color-2:hover{
+    background-color: rgb(53, 53, 53);
+}
