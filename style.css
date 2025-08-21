@@ -179,3 +179,13 @@ gap: 1rem;
     cursor:pointer;
     height: 2rem;
 }
+
+/*buttonn*/
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn {
+    
+}
