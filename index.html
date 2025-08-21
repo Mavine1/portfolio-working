@@ -11,13 +11,12 @@
     <!-- Desktop Navigation -->
     <nav id="desktop-nav">
         <div class="logo">
-            Mavine Muganda
+            <a href="#home">Mavine Muganda</a>
         </div>
         <div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact" onclick="location.href='mailto:mavinemalin@gmail.com'">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -25,7 +24,7 @@
     <!-- Mobile Navigation -->
     <nav id="hamburger-nav">
         <div class="logo">
-            Mavine Muganda
+            <a href="#home">Mavine Muganda</a>
         </div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -37,7 +36,6 @@
                 <ul>
                     <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu(); location.href='mailto:mavinemalin@gmail.com'">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -45,30 +43,31 @@
 
     <!-- Home Section -->
     <section id="home">
-        <div class="container">
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <div class="role-tag">SOFTWARE DEVELOPER</div>
-                    <h1 class="main-title">
-                        Hello, my name<br>
-                        is <span class="highlight">Mavine Muganda</span>
-                    </h1>
-                    <p class="description">
-                        Computer Science graduate with 1+ years of development experience in web-based applications and technical support. I specialize in creating innovative solutions using modern technologies.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-primary" onclick="window.open('assets/Muganda MavineCv.pdf', '_blank')">
-                            Projects
-                        </button>
-                        <button class="btn btn-secondary" onclick="window.open('https://linkedin.com/in/mavine-muganda', '_blank')">
-                            LinkedIn
-                        </button>
-                    </div>
+        <div class="profile-container">
+            <div class="section__pic-container">
+                <img src="assets/profile-pic.png" alt="Mavine Muganda">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Mavine Muganda</h1>
+                <p class="section__text__p2">Software Developer</p>
+                <p class="description">
+                    Computer Science graduate with 1+ years of development experience in web-based applications
+                    and technical support. Specialized in Laravel, React, Flutter, and Django development.
+                </p>
+                <div class="btn-container">
+                    <button class="btn btn-primary" onclick="window.open('assets/Muganda MavineCv.pdf', '_blank')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-secondary" onclick="location.href='mailto:mavinemalin@gmail.com'">
+                        Contact Me
+                    </button>
                 </div>
-                <div class="image-content">
-                    <div class="profile-circle">
-                        <img src="assets/profile-pic.png" alt="Mavine Muganda" class="profile-image">
-                    </div>
+                <div id="socials-container">
+                    <img src="assets/linkedin.png" alt="LinkedIn Profile" class="icon" 
+                         onclick="window.open('https://linkedin.com/in/mavine-muganda', '_blank')">
+                    <img src="assets/github.png" alt="GitHub Profile" class="icon" 
+                         onclick="window.open('https://github.com/mavine1', '_blank')">
                 </div>
             </div>
         </div>
@@ -76,34 +75,23 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">Innovative solutions I've built with modern technologies</p>
-            </div>
-            <div id="projects-container">
-                <!-- Projects will be loaded dynamically -->
-            </div>
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Innovative solutions I've built</p>
+        </div>
+        <div id="projects-container">
+            <div class="project-card">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project, highlighting key features and technologies used.</p>
+                
+            <!-- Projects will be loaded dynamically -->
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h3>Mavine Muganda</h3>
-                    <p>Software Developer passionate about creating innovative web solutions</p>
-                </div>
-                <div class="footer-right">
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/mavine-muganda" target="_blank" class="social-link">LinkedIn</a>
-                        <a href="https://github.com/mavine1" target="_blank" class="social-link">GitHub</a>
-                        <a href="mailto:mavinemalin@gmail.com" class="social-link">Email</a>
-                    </div>
-                    <p>&copy; <span id="current-year"></span> Mavine Muganda. All rights reserved.</p>
-                </div>
-            </div>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Mavine Muganda. All rights reserved.</p>
         </div>
     </footer>
 
