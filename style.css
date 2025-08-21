@@ -171,5 +171,11 @@ section {
 display: flex;
 justify-content: center;
 margin-top: 1rem;
-gap
+gap: 1rem;
+}
+
+/* icons */
+.icon {
+    cursor:pointer;
+    height: 2rem;
 }
