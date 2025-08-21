@@ -121,3 +121,9 @@ a:hover {
 .hamburger-icon span:last-child {
     transform: none;
 }
+
+/* section styles */
+section {
+    padding-top: 4vh
+    height
+}
