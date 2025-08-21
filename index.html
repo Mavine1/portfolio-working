@@ -3,60 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mavine Muganda</title>
+    <title>Mavine Muganda - Software Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
-        <div class="logo"> <a href="#home">Mavine Muganda</a></div>
-      <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experince">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo"> <a href="#home">Mavine Muganda</a></div>
-        <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="logo">
+            <a href="#home">Mavine Muganda</a>
         </div>
-        <div class="menu-links">
-            <ul>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experince" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="#home">Mavine Muganda</a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/profile-pic.png" alt="Mavine Muganda"></div>
-        <div class="section__text">
-            <p class=" section__text__p1">Hello, I,m</p>
-            <h1 class="title">Mavine Muganda</h1>
-            <p class="section__text__p2">A Front-End Developer</p>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="profile-container">
+            <div class="section__pic-container">
+                <img src="assets/profile-pic.png" alt="Mavine Muganda">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Mavine Muganda</h1>
+                <p class="section__text__p2">Software Developer</p>
+                <p class="description">
+                    Computer Science graduate with 1+ years of development experience in web-based applications
+                    and technical support. Specialized in Laravel, React, Flutter, and Django development.
+                </p>
+                <div class="btn-container">
+                    <button class="btn btn-primary" onclick="window.open('assets/Muganda MavineCv.pdf', '_blank')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-secondary" onclick="location.href='mailto:mavinemalin@gmail.com'">
+                        Contact Me
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="assets/linkedin.png" alt="LinkedIn Profile" class="icon" 
+                         onclick="window.open('https://linkedin.com/in/mavine-muganda', '_blank')">
+                    <img src="assets/github.png" alt="GitHub Profile" class="icon" 
+                         onclick="window.open('https://github.com/mavine1', '_blank')">
+                </div>
+            </div>
         </div>
-        <div class = "btn-container">
-        <button class="btn btn-color-2" onclick = "window.open('assets/resume-example.pdf', '_blank')">Download Resume</button>
-        <button class="btn btn-color-1" onclick = "location.href='./#contact '">Contact Me</button>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Innovative solutions I've built</p>
         </div>
-<div id="socials-container" >
-    <img src="assets/linkedin.png" alt="My LinkedIn Profile" class= "icon" onclick="window.open('https://linkedin.com/in/mavine-muganda-1b0a4b1b6/', '_blank')">
-    <img src="assets/github.png" alt="My GitHub Profile" class="icon"  onclick="window.open('https://github.com/mavine1', '_blank')">
-    </div>
-</section>
-<section id="about">
-    
-</section>
+        <div id="projects-container">
+            <!-- Projects will be loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Mavine Muganda. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
