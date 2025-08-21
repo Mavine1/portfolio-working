@@ -124,6 +124,10 @@ a:hover {
 
 /* section styles */
 section {
-    padding-top: 4vh
-    height
+    padding-top: 4vh;
+    height: 90vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    
+
 }
