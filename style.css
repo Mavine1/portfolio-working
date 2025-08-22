@@ -230,7 +230,7 @@ section {
 
 .section__text__p2 {
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #666;
 }
 
@@ -240,21 +240,21 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Button container - positioned after text content with more top margin for large screens */
+/* Button container - positioned closer to subtitle */
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* Social container - positioned after buttons with more spacing for large screens */
+/* Social container - positioned right after buttons */
 #socials-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 /* Icons */
@@ -482,7 +482,7 @@ section {
         padding: 4rem 1rem;
     }
     
-    /* Mobile button adjustments - reset margins for mobile */
+    /* Mobile button and social adjustments */
     .btn-container {
         flex-direction: column;
         align-items: center;
@@ -517,7 +517,6 @@ section {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        margin-top: 1rem;
         margin-bottom: 1rem;
     }
     
