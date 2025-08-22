@@ -238,7 +238,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Button container - positioned after text content */
@@ -254,7 +254,6 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 /* Icons */
