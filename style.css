@@ -279,10 +279,10 @@ section {
 
 /* Social container - positioned after buttons */
 #socials-container {
-    display: flex;
+  display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 0.5rem;
+    margin-bottom: 10rem;
 }
 
 /* Icons */
@@ -307,7 +307,7 @@ section {
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 12rem;
 }
 
 .btn-color-1, .btn-color-2 {
