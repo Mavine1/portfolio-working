@@ -241,19 +241,21 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Button container - positioned after text content */
+/* Button container - positioned after text content with more top margin for large screens */
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Social container - positioned after buttons */
+/* Social container - positioned after buttons with more spacing for large screens */
 #socials-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 /* Icons */
@@ -481,15 +483,21 @@ section {
         padding: 4rem 1rem;
     }
     
-    /* Mobile button adjustments */
+    /* Mobile button adjustments - reset margins for mobile */
     .btn-container {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     
     .btn {
         width: 12rem;
+    }
+    
+    #socials-container {
+        margin-top: 0.5rem;
     }
 }
 
@@ -510,6 +518,8 @@ section {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     
     .btn {
@@ -517,6 +527,6 @@ section {
     }
     
     #socials-container {
-        margin-top: 1.5rem;
+        margin-top: 0.5rem;
     }
 }
