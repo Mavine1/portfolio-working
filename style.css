@@ -6,9 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-image:url('assets/background.png');
+    background-image: url('assets/background.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -214,6 +215,8 @@ section {
     text-align: center;
     flex: 1;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section__text p {
@@ -228,7 +231,7 @@ section {
 
 .section__text__p2 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #666;
 }
 
@@ -238,20 +241,20 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Fix button container positioning */
+/* Button container - positioned after text content */
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
-/* Social container positioning */
+/* Social container - positioned after buttons */
 #socials-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 /* Icons */
@@ -293,7 +296,7 @@ section {
     background: transparent;
 }
 
-/* Projects Section - CORRECTED */
+/* Projects Section */
 #projects {
     padding: 6rem 0;
     min-height: 100vh;
@@ -306,7 +309,7 @@ section {
     margin-bottom: 3rem;
 }
 
-/* FIXED: Projects container - now properly displays cards in a row */
+/* Projects container - displays cards in a row */
 .projects-container {
     display: flex;
     gap: 2rem;
@@ -478,6 +481,17 @@ section {
     #contact {
         padding: 4rem 1rem;
     }
+    
+    /* Mobile button adjustments */
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 12rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -496,9 +510,14 @@ section {
     .btn-container {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
     
     .btn {
         width: 12rem;
+    }
+    
+    #socials-container {
+        margin-top: 1.5rem;
     }
 }
