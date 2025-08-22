@@ -241,18 +241,14 @@ section {
 
 /* Button container - positioned after section__text__p2 */
 .btn-container {
-  display: flex;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
-  flex-direction: column;  /* Ensure buttons are vertically aligned */
-  align-items: center;     /* Center buttons */
+ margin-bottom: 1rem;
 }
 
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
+  padding: 3rem;
   width: 8rem;
   border-radius: 2rem;
   border: none;
@@ -286,9 +282,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
-    flex-direction: column; /* Ensures icons are vertically stacked */
-    align-items: center;    /* Centers icons */
+    margin-top: 0.5rem;
 }
 
 /* Icons */
@@ -297,11 +291,38 @@ section {
     height: 2rem;
     width: 2rem;
     transition: transform 0.3s ease;
-    margin-bottom: 0.5rem;  /* Adds space between icons */
 }
 
 .icon:hover {
     transform: scale(1.1);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background: white;
+    color: rgb(53, 53, 53);
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-2 {
+    background: transparent;
 }
 
 /* Projects Section */
@@ -316,7 +337,6 @@ section {
     color: #333;
     margin-bottom: 3rem;
 }
-
 
 /* Projects container - displays cards in a row */
 .projects-container {
