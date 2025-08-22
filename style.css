@@ -302,12 +302,12 @@ section {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: 4rem;
     border-radius: 2rem;
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    margin-bottom: 12rem;
+
 }
 
 .btn-color-1, .btn-color-2 {
