@@ -1,4 +1,4 @@
-/* general styles */
+/* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url('assets/background.png');
@@ -33,7 +34,7 @@ p {
     color: #333;
 }
 
-/* Transition */
+/* Transitions */
 a, .btn {
     transition: all 300ms ease;
 }
@@ -173,116 +174,109 @@ a:hover {
 }
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
 .section-container {
-  display: flex;
+    display: flex;
 }
 
 /* PROFILE SECTION */
-
 #profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
 }
 
 .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
 
 .section__text {
-  align-self: center;
-  text-align: center;
+    align-self: center;
+    text-align: center;
 }
 
 .section__text p {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .section__text__p1 {
-  text-align: center;
+    text-align: center;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 3rem;
-  text-align: center;
+    font-size: 3rem;
+    text-align: center;
 }
 
 #socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
 /* ICONS */
-
 .icon {
-  cursor: pointer;
-  height: 2rem;
+    cursor: pointer;
+    height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+    background: rgb(53, 53, 53);
+    color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
 }
 
 .btn-color-2 {
-  background: none;
+    background: none;
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 /* Projects Section */
@@ -471,7 +465,7 @@ section {
         padding: 4rem 1rem;
     }
     
-    /* Mobile button adjustments - keep close spacing for mobile */
+    /* Mobile button adjustments */
     .btn-container {
         flex-direction: column;
         align-items: center;
