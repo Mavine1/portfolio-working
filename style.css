@@ -303,6 +303,7 @@ section {
 .icon:hover {
     transform: scale(1.1);
 }
+
 /* Projects Section */
 #projects {
     padding: 6rem 0;
