@@ -240,6 +240,15 @@ section {
     margin-bottom: 0.5rem;
 }
 
+/* Social container - positioned above buttons */
+#socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    order: 1;
+}
+
 /* Button container */
 .btn-container {
     display: flex;
@@ -247,6 +256,7 @@ section {
     gap: 1rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
+    order: 2;
 }
 
 /* Buttons */
@@ -280,14 +290,6 @@ section {
 
 .btn-color-2:hover {
     border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-/* Social container - positioned below buttons */
-#socials-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
 }
 
 /* Icons */
