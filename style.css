@@ -240,23 +240,21 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* Social container - positioned above buttons */
-#socials-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    order: 1;
-}
-
 /* Button container */
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
-    order: 2;
+}
+
+/* Social container - positioned below buttons */
+#socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0;
 }
 
 /* Buttons */
@@ -303,7 +301,6 @@ section {
 .icon:hover {
     transform: scale(1.1);
 }
-
 /* Projects Section */
 #projects {
     padding: 6rem 0;
