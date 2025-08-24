@@ -664,21 +664,24 @@ body::before {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 80px;
-        flex-direction: column;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(20px);
-        width: 50%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 2rem 0;
-        height: calc(100vh - 80px);
-    }
-
+   .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    width: 280px; /* Changed from 50% to fixed smaller width */
+    max-width: 90vw; /* Responsive max width */
+    text-align: center;
+    transition: left 0.3s ease; /* Improved transition */
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem 0; /* Reduced padding */
+    height: auto; /* Changed from calc(100vh - 80px) */
+    max-height: 60vh; /* Added max height to keep it smaller */
+    overflow-y: auto; /* Add scroll if content exceeds max height */
+    border-radius: 0 0 15px 0; /* Added rounded corner for better look */
+}
     .nav-menu.active {
         left: 0;
     }
