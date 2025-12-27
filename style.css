@@ -566,61 +566,110 @@ p {
 
 .contact-content {
     text-align: center;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-top: 40px;
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 .contact-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 25px;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 25px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     text-decoration: none;
     color: inherit;
-    max-width: 400px;
-    margin: 0 auto;
+    text-align: center;
+    height: 100%;
 }
 
 .contact-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact-icon {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background-color: rgba(16, 33, 75, 0.1);
+    background: linear-gradient(135deg, #10214b, #0d1a3a);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #10214b;
-    font-size: 1.5rem;
-    flex-shrink: 0;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+    background: linear-gradient(135deg, #d7bd88, #c0a56a);
+    transform: scale(1.1) rotate(5deg);
 }
 
 .contact-details h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #10214b;
-    margin-bottom: 5px;
-    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
 .contact-details p {
     color: #666;
-    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Alternative horizontal layout with flexbox */
+.contact-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-flex .contact-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .contact-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-flex .contact-item {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 /* ===== FOOTER ===== */
