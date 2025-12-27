@@ -290,9 +290,9 @@ section {
     transform: translateY(-3px);
 }
 
-/* ===== SKILLS SECTION ===== */
-.skills-section {
-    background: #f0f2f5;
+/* ===== PROJECTS SECTION ===== */
+.projects-section {
+    background: #f8f9fa;
 }
 
 .section-header {
@@ -314,6 +314,109 @@ section {
     margin: 0 auto;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.project-header h3 {
+    font-size: 18px;
+    color: #10214b;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.project-badge {
+    background: rgba(16, 33, 75, 0.1);
+    color: #10214b;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.project-content {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.project-content p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tech span {
+    background: #f0f2f5;
+    color: #10214b;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.project-footer {
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.project-link {
+    color: #10214b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #0d1a3a;
+}
+
+.project-link i {
+    font-size: 12px;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills-section {
+    background: white;
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -321,7 +424,7 @@ section {
 }
 
 .skill-category {
-    background: white;
+    background: #f8f9fa;
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -364,13 +467,14 @@ section {
 }
 
 .skill-item {
-    background: #f0f2f5;
+    background: white;
     color: #10214b;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
     transition: all 0.3s;
+    border: 1px solid #eaeaea;
 }
 
 .skill-item:hover {
@@ -380,6 +484,10 @@ section {
 }
 
 /* ===== CONTACT SECTION ===== */
+.contact-section {
+    background: #f8f9fa;
+}
+
 .contact-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -391,7 +499,7 @@ section {
 .contact-card {
     background: white;
     border-radius: 12px;
-    padding: 30px;
+    padding: 25px;
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -407,27 +515,28 @@ section {
 }
 
 .contact-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: rgba(16, 33, 75, 0.1);
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #10214b;
     flex-shrink: 0;
 }
 
 .contact-content h3 {
-    font-size: 18px;
+    font-size: 16px;
     color: #10214b;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .contact-content p {
     color: #666;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* ===== FOOTER ===== */
@@ -445,6 +554,14 @@ section {
 .footer p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.footer-tagline {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+    margin-top: 5px;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -466,6 +583,10 @@ section {
     
     .hero-actions {
         justify-content: center;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .skills-container,
@@ -515,6 +636,10 @@ section {
         font-size: 32px;
     }
     
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .skills-container,
     .contact-cards {
         grid-template-columns: 1fr;
@@ -544,6 +669,12 @@ section {
     .profile-img {
         width: 140px;
         height: 140px;
+    }
+    
+    .project-card,
+    .skill-category,
+    .contact-card {
+        padding: 20px;
     }
     
     section {
