@@ -6,31 +6,27 @@
     <title>Mavine Muganda - Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <header class="header">
-        <div class="container nav-container">
-            <a href="#home" class="logo">
-                <span>Mavine</span>
-                <div class="logo-dot"></div>
-            </a>
-            
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+        <div class="container">
+            <nav class="nav">
+                <a href="#home" class="logo">M</a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
         </div>
     </header>
 
@@ -39,41 +35,37 @@
         <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Hi, I'm <span class="highlight">Mavine Muganda</span></h1>
-                        <p class="title">Software Developer</p>
-                        <p>
-                            I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive. 
-                            With expertise in web and mobile development, I transform ideas into innovative solutions that drive results.
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Mavine Muganda</h1>
+                        <h2 class="hero-subtitle">Software Developer</h2>
+                        <p class="hero-description">
+                            Specializing in web and mobile applications with expertise in building scalable solutions. 
+                            Passionate about creating seamless user experiences and optimizing system performance.
                         </p>
-                        
-                        <div class="hero-buttons">
-                            <a href="https://wa.me/+254794461389?text=Hello!%20I%27d%20like%20to%20get%20in%20touch%20with%20you%20for%20a%20project." 
-                               target="_blank" class="btn btn-primary">
-                                <i class="fas fa-comment"></i> Get In Touch
+                        <div class="hero-actions">
+                            <a href="https://wa.me/+254794461389" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-whatsapp"></i> Get In Touch
                             </a>
-                            <a href="assets/Muganda Mavine.pdf" target="_blank" class="btn btn-secondary">
+                            <a href="assets/Muganda Mavine.pdf" target="_blank" class="btn btn-outline">
                                 <i class="fas fa-file-alt"></i> View CV
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="hero-visual">
-                        <div class="profile-card">
-                            <img src="assets/mavine.png" alt="Mavine Muganda" class="profile-image">
+                    <div class="hero-profile">
+                        <div class="profile">
+                            <img src="assets/mavine.png" alt="Mavine Muganda" class="profile-img">
                             <div class="profile-info">
                                 <h3>Mavine Muganda</h3>
                                 <p>Software Developer</p>
-                                
-                                <div class="profile-social">
-                                    <a href="https://linkedin.com/in/mavine-muganda-b0a784363" target="_blank" class="social-icon" aria-label="LinkedIn">
-                                        <i class="fab fa-linkedin-in"></i>
+                                <div class="profile-links">
+                                    <a href="https://linkedin.com/in/mavine-muganda-b0a784363" target="_blank" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin"></i>
                                     </a>
-                                    <a href="https://github.com/mavine1" target="_blank" class="social-icon" aria-label="GitHub">
+                                    <a href="https://github.com/mavine1" target="_blank" aria-label="GitHub">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="mailto:mavinemalin@gmail.com" class="social-icon" aria-label="Email">
+                                    <a href="mailto:mavinemalin@gmail.com" aria-label="Email">
                                         <i class="fas fa-envelope"></i>
                                     </a>
                                 </div>
@@ -85,133 +77,71 @@
         </section>
 
         <!-- Skills Section -->
-        <section class="skills" id="skills">
+        <section class="skills-section" id="skills">
             <div class="container">
                 <div class="section-header">
-                    <h2>My Skills</h2>
-                    <p>I specialize in building modern web and mobile applications using cutting-edge technologies</p>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I specialize in</p>
                 </div>
                 
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Frontend Development</h3>
-                        <p>Building responsive and interactive user interfaces with modern frameworks and libraries.</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Vue.js</span>
-                            <span class="skill-tag">TypeScript</span>
+                <div class="skills-container">
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item">PHP (Laravel)</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Python (Django)</span>
+                            <span class="skill-item">Flutter</span>
+                            <span class="skill-item">API Development</span>
                         </div>
                     </div>
                     
-                    <div class="skill-card">
-                        <i class="fas fa-server"></i>
-                        <h3>Backend Development</h3>
-                        <p>Developing robust server-side applications, APIs, and database management systems.</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Express.js</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">PostgreSQL</span>
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item">HTML</span>
+                            <span class="skill-item">CSS</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Next.js</span>
+                            <span class="skill-item">Tailwind CSS</span>
+                            <span class="skill-item">API Integration</span>
                         </div>
                     </div>
                     
-                    <div class="skill-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Mobile Development</h3>
-                        <p>Creating cross-platform mobile applications with native performance and intuitive UI.</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">React Native</span>
-                            <span class="skill-tag">Flutter</span>
-                            <span class="skill-tag">iOS/Android</span>
-                            <span class="skill-tag">PWA</span>
+                    <!-- Databases -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Databases & Servers</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item">MySQL</span>
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">Redis</span>
+                            <span class="skill-item">Nginx</span>
                         </div>
                     </div>
                     
-                    <div class="skill-card">
-                        <i class="fas fa-tools"></i>
-                        <h3>Tools & DevOps</h3>
-                        <p>Streamlining development workflows with modern tools and deployment practices.</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">CI/CD</span>
+                    <!-- Other Skills -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools & Other</h3>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <div class="container">
-                <div class="section-header">
-                    <h2>My Projects</h2>
-                    <p>A selection of projects I've worked on to showcase my skills and experience</p>
-                </div>
-                
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                            <div class="project-category">Web App</div>
-                        </div>
-                        <div class="project-content">
-                            <h3>E-Commerce Platform</h3>
-                            <p>A full-featured online shopping platform with product management, cart functionality, and secure checkout.</p>
-                            <div class="project-tech">
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                            <div class="project-category">Mobile App</div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Task Management App</h3>
-                            <p>A productivity app for managing tasks with real-time sync, notifications, and team collaboration.</p>
-                            <div class="project-tech">
-                                <span>React Native</span>
-                                <span>Firebase</span>
-                                <span>Redux</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                            <div class="project-category">Dashboard</div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Analytics Dashboard</h3>
-                            <p>Interactive dashboard for data visualization with real-time metrics and customizable reports.</p>
-                            <div class="project-tech">
-                                <span>Vue.js</span>
-                                <span>D3.js</span>
-                                <span>Express</span>
-                            </div>
+                        <div class="skill-list">
+                            <span class="skill-item">Git & GitHub</span>
+                            <span class="skill-item">Adobe XD</span>
+                            <span class="skill-item">Technical Documentation</span>
+                            <span class="skill-item">System Implementation</span>
                         </div>
                     </div>
                 </div>
@@ -219,61 +149,53 @@
         </section>
 
         <!-- Contact Section -->
-    <!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="container">
-        <div class="contact-content">
-            <div class="section-header">
-                <h2>Let's Work Together</h2>
-                <p>Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing.</p>
-            </div>
-            
-            <div class="contact-info">
-                <div class="contact-grid">
-                    <a href="mailto:mavinemalin@gmail.com" class="contact-item">
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">Let's work together on your next project</p>
+                </div>
+                
+                <div class="contact-cards">
+                    <a href="mailto:mavinemalin@gmail.com" class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
+                        <div class="contact-content">
+                            <h3>Email</h3>
                             <p>mavinemalin@gmail.com</p>
                         </div>
                     </a>
                     
-                    <a href="tel:+254794461389" class="contact-item">
+                    <a href="tel:+254794461389" class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
+                        <div class="contact-content">
+                            <h3>Phone</h3>
                             <p>+254 794 461 389</p>
                         </div>
                     </a>
                     
-                    <a href="https://wa.me/+254794461389" target="_blank" class="contact-item">
+                    <a href="https://wa.me/+254794461389" target="_blank" class="contact-card">
                         <div class="contact-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
+                        <div class="contact-content">
+                            <h3>WhatsApp</h3>
                             <p>Message me directly</p>
                         </div>
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>Passionate about creating elegant solutions to complex problems through clean, efficient code.</p>
-                <div class="copyright">
-                    <p>&copy; <span id="currentYear"></span> Mavine Muganda. All rights reserved.</p>
-                </div>
+                <p>&copy; <span id="currentYear"></span> Mavine Muganda. All rights reserved.</p>
             </div>
         </div>
     </footer>
