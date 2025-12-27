@@ -672,11 +672,11 @@ p {
     }
 }
 
-/* ===== FOOTER ===== */
+/* ===== MINIMAL FOOTER ===== */
 .footer {
     background-color: #10214b;
     color: rgba(255, 255, 255, 0.8);
-    padding: 60px 0 30px;
+    padding: 20px 0; /* Minimal padding */
     text-align: center;
 }
 
@@ -686,21 +686,21 @@ p {
 }
 
 .footer p {
-    margin-bottom: 20px;
-    font-size: 0.95rem;
+    margin: 0 0 10px;
+    font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-social {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-social .social-link {
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     color: white;
@@ -708,19 +708,20 @@ p {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: background 0.2s ease;
+    font-size: 0.8rem;
 }
 
 .footer-social .social-link:hover {
     background: #d7bd88;
-    transform: translateY(-3px);
 }
 
 .copyright {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
