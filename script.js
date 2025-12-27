@@ -99,6 +99,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 // Observe elements for animation
-document.querySelectorAll('.hero-content, .hero-profile, .skill-category, .contact-card').forEach(el => {
+document.querySelectorAll('.hero-content, .hero-profile, .project-card, .skill-category, .contact-card').forEach(el => {
     observer.observe(el);
 });
